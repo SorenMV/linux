@@ -48,6 +48,8 @@ modules.builtin
 
 # Build folder
 kernel-build/
+conform_config.sh
+conform_config_jamesachambers.sh
 
 #
 # Top-level generic files
