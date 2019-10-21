@@ -209,6 +209,11 @@ static struct uvc_format_desc uvc_fmts[] = {
 		.guid		= UVC_GUID_FORMAT_RW16,
 		.fcc		= V4L2_PIX_FMT_RW16,
  	},
+ 	{
+		.name		= "16-bit Bayer BGBG/GRGR",
+		.guid		= UVC_GUID_FORMAT_BAYER16,
+		.fcc		= V4L2_PIX_FMT_SBGGR16,
+	},
 	{
 		.name		= "Depth 16-bit (INVZ)",
 		.guid		= UVC_GUID_FORMAT_INVZ,
@@ -258,6 +263,16 @@ static struct uvc_format_desc uvc_fmts[] = {
 		.name		= "Depth data 16-bit (D16)",
 		.guid		= UVC_GUID_FORMAT_D16,
 		.fcc		= V4L2_PIX_FMT_Z16,
+	},
+	{
+		.name		= "Packed raw data 10-bit",
+		.guid		= UVC_GUID_FORMAT_W10,
+		.fcc		= V4L2_PIX_FMT_W10,
+	},
+	{
+		.name		= "Confidence data (C   )",
+		.guid		= UVC_GUID_FORMAT_CONFIDENCE_MAP,
+		.fcc		= V4L2_PIX_FMT_CONFIDENCE_MAP,
 	},
 };
 
